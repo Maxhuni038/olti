@@ -1,0 +1,28 @@
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        Console.Write("Shkruaj emrin: ");
+        string emri = Console.ReadLine();
+
+        Console.Write("Shkruaj moshen: ");
+        int mosha = Convert.ToInt32(Console.ReadLine());
+
+        Console.WriteLine("\n--- Te dhenat ---");
+        Console.WriteLine("Emri: " + emri);
+        Console.WriteLine("Mosha: " + mosha);
+
+        if (mosha >= 18)
+        {
+            Console.WriteLine("Je i rritur.");
+        }
+        else
+        {
+            Console.WriteLine("Je nen 18 vjeç.");
+        }
+
+        Console.ReadKey();
+    }
+}
